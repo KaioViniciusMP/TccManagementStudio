@@ -1,0 +1,53 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TccManagementPersonal
+build_property.ProjectDir = C:\Users\Caio\Documents\ProjetosPessoais\TccManagementPersonal\TccManagementPersonal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/Caio/Documents/ProjetosPessoais/TccManagementPersonal/TccManagementPersonal/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TccManagementPersonal.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Caio/Documents/ProjetosPessoais/TccManagementPersonal/TccManagementPersonal/Componentes/TabbedPageMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TccManagementPersonal.Componentes.TabbedPageMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = Componentes\TabbedPageMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = Componentes\TabbedPageMenu.xaml
+
+[C:/Users/Caio/Documents/ProjetosPessoais/TccManagementPersonal/TccManagementPersonal/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TccManagementPersonal.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Caio/Documents/ProjetosPessoais/TccManagementPersonal/TccManagementPersonal/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TccManagementPersonal.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Caio/Documents/ProjetosPessoais/TccManagementPersonal/TccManagementPersonal/Views/PageEscolherModalidade.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TccManagementPersonal.Views.PageEscolherModalidade.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PageEscolherModalidade.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PageEscolherModalidade.xaml
+
+[C:/Users/Caio/Documents/ProjetosPessoais/TccManagementPersonal/TccManagementPersonal/Views/PageHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TccManagementPersonal.Views.PageHome.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PageHome.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PageHome.xaml

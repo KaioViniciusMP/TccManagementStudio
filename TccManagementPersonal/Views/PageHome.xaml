@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Views.PageHome"
+             BackgroundColor="#5D5C96"
+             IconImageSource="casa.png"
+             NavigationPage.HasNavigationBar="false"
+             xmlns:TccManagementPersonal="clr-namespace:TccManagementPersonal.Componentes">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Grid RowDefinitions="200,*">
+                <StackLayout Grid.Row="0" BackgroundColor="#5D5C96" Orientation="Horizontal" VerticalOptions="Start">
+                    <Frame HeightRequest="60" WidthRequest="60" BackgroundColor="#7C76A8" CornerRadius="30" Margin="15" HorizontalOptions="Start" BorderColor="Transparent"/>
+                    <Label Text="Olá, Kaio!" VerticalOptions="Center" FontAttributes="Bold"/>
+                </StackLayout>
+
+                <Frame CornerRadius="40" Padding="0" Grid.Row="1" BackgroundColor="#7C76A8" BorderColor="Transparent">
+
+                    <Grid RowDefinitions="260,*">
+                        <StackLayout Grid.Row="0" Margin="26" >
+                            <Label Text="Saldo disponivel" FontSize="15" Margin="10,0,0,0" FontAttributes="Bold"/>
+
+                            <HorizontalStackLayout>
+                                <Grid ColumnDefinitions="*,*" MinimumWidthRequest="380">
+                                    <Label Grid.Column="0" Text="R$12.123,00" TextColor="White" VerticalOptions="Center" FontSize="24" Margin="10,0,0,0" FontAttributes="Bold"/>
+                                    <Button BackgroundColor="Transparent" WidthRequest="60" HorizontalOptions="End" Grid.Column="1" Text=">" TextColor="White" VerticalOptions="Center" FontSize="20"/>
+                                </Grid>
+                            </HorizontalStackLayout>
+
+                            <BoxView Color="white" Margin="0,10,0,0" HeightRequest="1" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Center"/>
+
+                            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center" Margin="0,30,0,30">
+                                <VerticalStackLayout>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Label Text="Configurações" HorizontalOptions="Center"/>
+                                </VerticalStackLayout>
+
+                                <VerticalStackLayout>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Label Text="Ajuda" HorizontalOptions="Center"/>
+                                </VerticalStackLayout>
+
+                                <VerticalStackLayout>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Label Text="Entrada" HorizontalOptions="Center"/>
+                                </VerticalStackLayout>
+
+                                <VerticalStackLayout>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Label Text="Planejar" HorizontalOptions="Center"/>
+                                </VerticalStackLayout>
+
+                            </HorizontalStackLayout>
+                        </StackLayout>
+
+                        <Frame CornerRadius="40" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent" >
+                            <StackLayout Margin="8">
+                                <Label Text="Total investido" FontSize="15" Margin="10,0,0,0" FontAttributes="Bold" TextColor="Black"/>
+                                <HorizontalStackLayout Margin="10,15,0,15">
+                                    <Grid ColumnDefinitions="*,*" MinimumWidthRequest="380">
+                                        <Label Text="R$12.123,00" FontAttributes="Bold" FontSize="30" TextColor="Black" VerticalTextAlignment="Center" Grid.Column="0"/>
+                                        <Button Text="Utilizar" Clicked="GoPageEscolherModalidade" MaximumWidthRequest="110" HeightRequest="35" BorderColor="#7C76A8" Grid.Column="1" BorderWidth="1" Background="White"/>
+                                    </Grid>
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Margin="10,0,0,15">
+                                    <Grid ColumnDefinitions="*,*" MinimumWidthRequest="400">
+                                        <Label FontSize="15" Text="Disponivel para utilizar" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Column="0" TextColor="Black"/>
+                                        <Label FontSize="17" Text="R$12.123,00" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Column="1"/>
+                                    </Grid>
+                                </HorizontalStackLayout>
+
+                                <VerticalStackLayout Margin="0,20,0,0">
+                                    <Label Text="Seus rendimentos em 2024" FontAttributes="Bold" Margin="10,0,0,0" FontSize="18" TextColor="Black"/>
+                                    <Frame HeightRequest="200" BorderColor="Black" Margin="0,10,0,10"/>
+                                </VerticalStackLayout>
+
+                                <VerticalStackLayout Spacing="30">
+                                    <Label Text="Categorias" FontAttributes="Bold" Margin="10,0,0,0" FontSize="20" TextColor="Black"/>
+
+                                    <VerticalStackLayout>
+                                        <Grid ColumnDefinitions="80,30,*,*">
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <VerticalStackLayout Grid.Column="2">
+                                                <Label Text="Investimentos" TextColor="Black"/>
+                                                <Label Text="R$12.123,00" TextColor="Black"/>
+                                                <Label Text="74,85%" TextColor="Black"/>
+                                            </VerticalStackLayout>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+
+                                    <VerticalStackLayout>
+                                        <Grid ColumnDefinitions="80,30,*,*">
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <VerticalStackLayout Grid.Column="2">
+                                                <Label Text="Alimentação" TextColor="Black"/>
+                                                <Label Text="R$12.123,00" TextColor="Black"/>
+                                                <Label Text="74,85%" TextColor="Black"/>
+                                            </VerticalStackLayout>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+
+                                    <VerticalStackLayout>
+                                        <Grid ColumnDefinitions="80,30,*,*">
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <VerticalStackLayout Grid.Column="2">
+                                                <Label Text="Transporte" TextColor="Black"/>
+                                                <Label Text="R$12.123,00" TextColor="Black"/>
+                                                <Label Text="74,85%" TextColor="Black"/>
+                                            </VerticalStackLayout>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+
+                                    <VerticalStackLayout>
+                                        <Grid ColumnDefinitions="80,30,*,*">
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <VerticalStackLayout Grid.Column="2">
+                                                <Label Text="Compras" TextColor="Black"/>
+                                                <Label Text="R$12.123,00" TextColor="Black"/>
+                                                <Label Text="74,85%" TextColor="Black"/>
+                                            </VerticalStackLayout>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+
+                                    <VerticalStackLayout>
+                                        <Grid ColumnDefinitions="80,30,*,*">
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <VerticalStackLayout Grid.Column="2">
+                                                <Label Text="Saúde" TextColor="Black"/>
+                                                <Label Text="R$12.123,00" TextColor="Black"/>
+                                                <Label Text="74,85%" TextColor="Black"/>
+                                            </VerticalStackLayout>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+
+                                    <VerticalStackLayout Margin="0,0,0,100">
+                                        <Grid ColumnDefinitions="80,30,*,*">
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <VerticalStackLayout Grid.Column="2">
+                                                <Label Text="Lazer" TextColor="Black"/>
+                                                <Label Text="R$12.123,00" TextColor="Black"/>
+                                                <Label Text="74,85%" TextColor="Black"/>
+                                            </VerticalStackLayout>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+
+        <TccManagementPersonal:TabbedPageMenu AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,430,100"/>
+        
+    </AbsoluteLayout>
+</ContentPage>

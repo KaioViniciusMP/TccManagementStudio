@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Componentes.TabbedPageMenu"
+             BackgroundColor="#D9D9D9"
+             VerticalOptions="End">
+    
+    <Grid ColumnDefinitions="*,*,100,*,*" HeightRequest="80" VerticalOptions="Center">
+        <StackLayout Grid.Column="0" Padding="0,5,0,0">
+            <Frame WidthRequest="60" HeightRequest="60" Padding="0" BackgroundColor="#D9D9D9" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="30">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="PopPageHome"/>
+                </Frame.GestureRecognizers>
+                <Image Source="iconcasa.png" HeightRequest="35"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" Padding="0,5,0,0">
+            <Frame WidthRequest="60" HeightRequest="60" Padding="0" BackgroundColor="#D9D9D9" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="30">
+                <Image Source="iconentradadinheiro.png" HeightRequest="40"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Grid.Column="2" HeightRequest="150">
+            <Frame CornerRadius="70" HeightRequest="90" WidthRequest="90" BackgroundColor="#7D77A9">
+                <Image Source="iconmais.png" HeightRequest="40"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Grid.Column="3" Padding="0,5,0,0">
+            <Frame WidthRequest="60" HeightRequest="60" Padding="0" BackgroundColor="#D9D9D9" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="30">
+                <Image Source="iconopcoes.png" HeightRequest="35"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Grid.Column="4" Padding="0,5,0,0">
+            <Frame WidthRequest="60" HeightRequest="60" Padding="0" BackgroundColor="#D9D9D9" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="30">
+                <Image Source="iconhistorico.png" HeightRequest="40"/>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</StackLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Views.PageEscolherModalidade"
+             Title="PageEscolherModalidade"
+             BackgroundColor="#5D5C96"
+             NavigationPage.HasNavigationBar="false"
+             xmlns:TccManagementPersonal="clr-namespace:TccManagementPersonal.Componentes">
+
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Grid RowDefinitions="200,*">
+                <StackLayout Grid.Row="0" BackgroundColor="#5D5C96" Orientation="Horizontal" VerticalOptions="Start">
+                    <Frame HeightRequest="60" WidthRequest="60" BackgroundColor="#7C76A8" CornerRadius="30" Margin="15" HorizontalOptions="Start" BorderColor="Transparent"/>
+                    <Label Text="Olá, Kaio!" VerticalOptions="Center" FontAttributes="Bold"/>
+                </StackLayout>
+
+                <Frame Padding="26" CornerRadius="40" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent">
+                    
+                    <StackLayout Spacing="20">
+                        <StackLayout>
+                            <Label Text="Utilizar R$ em qual modalidade?" FontAttributes="Bold" Margin="16,0,0,0" FontSize="16" TextColor="Black"/>
+                        </StackLayout>
+
+                        <Button Text="Lazer" HeightRequest="50" BackgroundColor="#D9D9D9"/>
+                        <Button Text="Compras" HeightRequest="50" BackgroundColor="#D9D9D9"/>
+                        <Button Text="Saúde" HeightRequest="50" BackgroundColor="#D9D9D9"/>
+                        <Button Text="Transporte" HeightRequest="50" BackgroundColor="#D9D9D9"/>
+                        <Button Text="Alimentação" HeightRequest="50" BackgroundColor="#D9D9D9"/>
+                        <Button Text="Investimentos" HeightRequest="50" BackgroundColor="#D9D9D9"/>
+                    </StackLayout>
+                    
+                </Frame>
+            </Grid>
+
+        </ScrollView>
+
+        <TccManagementPersonal:TabbedPageMenu AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,430,100"/>
+
+    </AbsoluteLayout>
+</ContentPage>
