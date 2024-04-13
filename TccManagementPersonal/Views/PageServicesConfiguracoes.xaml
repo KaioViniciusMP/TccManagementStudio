@@ -21,8 +21,8 @@
 
                         <HorizontalStackLayout>
                             <Grid ColumnDefinitions="*,*" MinimumWidthRequest="380">
-                                <Label Grid.Column="0" Text="Configurações" TextTransform="Uppercase" TextColor="Gray" VerticalOptions="Center" FontSize="15" Margin="10,0,0,0" FontAttributes="Bold"/>
-                                <Button BackgroundColor="Transparent" WidthRequest="60" HorizontalOptions="End" Grid.Column="1" Text=">" TextColor="White" VerticalOptions="Center" FontSize="20"/>
+                                <Label Grid.Column="0" Text="Configurações" TextTransform="Uppercase" TextColor="Gray" VerticalOptions="Center" FontSize="15" Margin="10,5,10,10" FontAttributes="Bold"/>
+                                
                             </Grid>
                         </HorizontalStackLayout>
 

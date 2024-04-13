@@ -34,7 +34,7 @@
                                     <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
                                         <Image Source="iconconfiguracoes.png" WidthRequest="40">
                                             <Image.GestureRecognizers>
-                                                <TapGestureRecognizer Tapped="PageEntradaFinanceiraExtra"/>
+                                                <TapGestureRecognizer Tapped="PageServicesConfiguracoes"/>
                                             </Image.GestureRecognizers>
                                         </Image>
                                     </Frame>
@@ -46,7 +46,7 @@
                                     <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
                                         <Image Source="iconajuda.png" WidthRequest="50" HeightRequest="35">
                                             <Image.GestureRecognizers>
-                                                <TapGestureRecognizer Tapped="PageEntradaFinanceiraExtra"/>
+                                                <TapGestureRecognizer Tapped="PageEscolherAjuda"/>
                                             </Image.GestureRecognizers>
                                         </Image>
                                     </Frame>
