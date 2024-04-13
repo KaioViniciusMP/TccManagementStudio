@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Views.PagePrivacidadeSegurança"
+             Title="PagePrivacidadeSegurança"
+              NavigationPage.HasNavigationBar="false"
+                xmlns:TccManagementPersonal="clr-namespace:TccManagementPersonal.Componentes"
+                Background="#4D4D4D">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Grid RowDefinitions="150,*"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <HorizontalStackLayout>
+                    <Label Text="icon" FontSize="20" TextColor="White" Margin="10"/>
+                    <Label Text="Voltar" FontAttributes="Bold" FontSize="20" TextColor="White" Margin="10"/>
+                </HorizontalStackLayout>
+
+                <Frame CornerRadius="40" Padding="0,0,0,100" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent">
+                    <Grid RowDefinitions="110,*,*" Margin="0">
+                        <StackLayout Grid.Row="0" Margin="26,26,26,0">
+                            <Label Text="conteudo juridico do app" HorizontalOptions="Center" FontSize="22" TextColor="Black" TextTransform="Uppercase" Margin="10,0,0,0" FontAttributes="Bold"/>
+
+                            <Label Grid.Column="0" Text="Termos e Politicas de Privacidade" HorizontalOptions="Center" TextColor="Gray" VerticalOptions="Center" FontSize="15" Margin="10,5,0,0" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Margin="40,0,40,0">
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Bem-vindo ao MANAGEMENT PERSONAL!"/>
+                            <Label Margin="0,0,0,5" TextColor="Black" Text="Estes termos e políticas de privacidade regem o uso do nosso aplicativo de gerenciamento financeiro pessoal. Ao utilizar este aplicativo, você concorda com estes termos e políticas de privacidade. Por favor, leia atentamente."/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="1. Dados Coletados"/>
+                            <Label Margin="0,0,0,10" TextColor="Black" Text="Nós não coletamos informações pessoais dos usuários. O aplicativo é projetado para garantir a privacidade e a segurança dos seus dados financeiros."/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="2. Uso de Dados"/>
+                            <Label Margin="0,0,0,10" TextColor="Black" Text="O aplicativo utiliza dados financeiros fornecidos pelo usuário exclusivamente para fins de organização e gerenciamento financeiro pessoal. Não compartilhamos esses dados com terceiros."/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="3. Segurança dos Dados"/>
+                            <Label Margin="0,0,0,10" TextColor="Black" Text="Empregamos medidas de segurança adequadas para proteger os dados dos usuários contra acesso não autorizado, alteração, divulgação ou destruição não autorizada."/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="4. Consentimento"/>
+                            <Label Margin="0,0,0,10" TextColor="Black" Text="Ao utilizar o aplicativo, você consente com estes termos e políticas de privacidade."/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="5. Alterações nos Termos e Políticas de Privacidade"/>
+                            <Label Margin="0,0,0,10" TextColor="Black" Text="Reservamo-nos o direito de atualizar ou modificar estes termos e políticas de privacidade a qualquer momento. "/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Recomendamos que você revise periodicamente esta página para estar ciente de quaisquer alterações."/>
+
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="6. Contato"/>
+                            <Label Margin="0,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Se você tiver alguma dúvida ou preocupação sobre estes termos e políticas de privacidade, entre em contato conosco em (11) 98594-7944."/>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+
+        <TccManagementPersonal:TabbedPageMenu AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,430,100"/>
+    </AbsoluteLayout>
+</ContentPage>

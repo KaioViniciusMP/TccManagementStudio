@@ -57,11 +57,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\iconajuda.svg" />
 	  <None Remove="Resources\Images\iconcasa.svg" />
+	  <None Remove="Resources\Images\iconconfiguracoes.svg" />
 	  <None Remove="Resources\Images\iconentradadinheiro.svg" />
+	  <None Remove="Resources\Images\iconentradafinanceira.svg" />
 	  <None Remove="Resources\Images\iconhistorico.svg" />
 	  <None Remove="Resources\Images\iconmais.svg" />
 	  <None Remove="Resources\Images\iconopcoes.svg" />
+	  <None Remove="Resources\Images\iconplanejar.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -80,10 +84,28 @@
 	  <MauiXaml Update="Componentes\TabbedPageMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\PageEntradaFinanceiraExtra.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageEntradaFinanceiraMensal.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageEscolherAjuda.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PageEscolherModalidade.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PageHome.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PagePrivacidadeSegurança.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageRelatarProblema.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageServicesConfiguracoes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

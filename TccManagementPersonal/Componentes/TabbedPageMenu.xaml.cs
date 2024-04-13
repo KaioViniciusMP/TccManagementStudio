@@ -1,3 +1,5 @@
+using TccManagementPersonal.Views;
+
 namespace TccManagementPersonal.Componentes;
 
 public partial class TabbedPageMenu : StackLayout
@@ -10,5 +12,10 @@ public partial class TabbedPageMenu : StackLayout
     private void PopPageHome(object sender, TappedEventArgs e)
     {
 		Navigation.PopToRootAsync();
+    }
+
+    private void PageEntradaFinanceiraMensal(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageEntradaFinanceiraMensal());
     }
 }

@@ -23,7 +23,7 @@
                             <HorizontalStackLayout>
                                 <Grid ColumnDefinitions="*,*" MinimumWidthRequest="380">
                                     <Label Grid.Column="0" Text="R$12.123,00" TextColor="White" VerticalOptions="Center" FontSize="24" Margin="10,0,0,0" FontAttributes="Bold"/>
-                                    <Button BackgroundColor="Transparent" WidthRequest="60" HorizontalOptions="End" Grid.Column="1" Text=">" TextColor="White" VerticalOptions="Center" FontSize="20"/>
+                                    <Button Background="Transparent" WidthRequest="60" HorizontalOptions="End" Grid.Column="1" Text=">" TextColor="White" VerticalOptions="Center" FontSize="20"/>
                                 </Grid>
                             </HorizontalStackLayout>
 
@@ -31,22 +31,44 @@
 
                             <HorizontalStackLayout Spacing="20" HorizontalOptions="Center" Margin="0,30,0,30">
                                 <VerticalStackLayout>
-                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
+                                        <Image Source="iconconfiguracoes.png" WidthRequest="40">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="PageEntradaFinanceiraExtra"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                    </Frame>
                                     <Label Text="Configurações" HorizontalOptions="Center"/>
                                 </VerticalStackLayout>
 
+                                
                                 <VerticalStackLayout>
-                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
+                                        <Image Source="iconajuda.png" WidthRequest="50" HeightRequest="35">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="PageEntradaFinanceiraExtra"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                    </Frame>
                                     <Label Text="Ajuda" HorizontalOptions="Center"/>
                                 </VerticalStackLayout>
 
                                 <VerticalStackLayout>
-                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
+                                        <Image Source="iconentradafinanceira.png" WidthRequest="60" HeightRequest="40">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="PageEntradaFinanceiraExtra"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                    </Frame>
                                     <Label Text="Entrada" HorizontalOptions="Center"/>
+
                                 </VerticalStackLayout>
 
                                 <VerticalStackLayout>
-                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent"/>
+                                    <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
+                                        <Image Source="iconplanejar.png" WidthRequest="40"/>
+                                    </Frame>
                                     <Label Text="Planejar" HorizontalOptions="Center"/>
                                 </VerticalStackLayout>
 
@@ -59,7 +81,7 @@
                                 <HorizontalStackLayout Margin="10,15,0,15">
                                     <Grid ColumnDefinitions="*,*" MinimumWidthRequest="380">
                                         <Label Text="R$12.123,00" FontAttributes="Bold" FontSize="30" TextColor="Black" VerticalTextAlignment="Center" Grid.Column="0"/>
-                                        <Button Text="Utilizar" Clicked="GoPageEscolherModalidade" MaximumWidthRequest="110" HeightRequest="35" BorderColor="#7C76A8" Grid.Column="1" BorderWidth="1" Background="White"/>
+                                        <Button Text="Utilizar" TextColor="#7C76A8" FontAttributes="Bold" HorizontalOptions="End" Margin="0,0,25,0" Clicked="GoPageEscolherModalidade" WidthRequest="120" HeightRequest="35" BorderColor="#7C76A8" Grid.Column="1" BorderWidth="1" Background="White"/>
                                     </Grid>
                                 </HorizontalStackLayout>
 
@@ -164,6 +186,6 @@
         </ScrollView>
 
         <TccManagementPersonal:TabbedPageMenu AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,430,100"/>
-        
+
     </AbsoluteLayout>
 </ContentPage>

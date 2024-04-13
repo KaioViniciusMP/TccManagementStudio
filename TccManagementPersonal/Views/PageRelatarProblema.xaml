@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Views.PageRelatarProblema"
+             Title="PageRelatarProblema"
+             NavigationPage.HasNavigationBar="false"
+            xmlns:TccManagementPersonal="clr-namespace:TccManagementPersonal.Componentes"
+            Background="#4D4D4D">
+
+    <AbsoluteLayout>
+        <Grid RowDefinitions="130,*" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <HorizontalStackLayout>
+                <Label Text="icon" FontSize="20" TextColor="White" Margin="10"/>
+                <Label Text="Voltar" FontAttributes="Bold" FontSize="20" TextColor="White" Margin="10"/>
+            </HorizontalStackLayout>
+
+            <Frame CornerRadius="40" Padding="0" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent">
+                <Grid RowDefinitions="110,*,*" Margin="0">
+                    <StackLayout Grid.Row="0" Margin="26,26,26,0">
+                        <Label Text="relatar problema" HorizontalOptions="Center" FontSize="22" TextColor="Black" TextTransform="Uppercase" Margin="10,0,0,0" FontAttributes="Bold"/>
+
+                        <Label Grid.Column="0" Text="Explique o que aconteceu ou o que não está funcionando" HorizontalOptions="Center" TextColor="Gray" VerticalOptions="Center" FontSize="15" Margin="10,5,0,0" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Frame BorderColor="Gray" WidthRequest="330" HeightRequest="280" CornerRadius="10" Padding="5" BackgroundColor="White">
+                            <Entry Placeholder="Relate o problema aqui..."
+                                   BackgroundColor="Transparent"
+                                   Margin="5"
+                                   FontSize="16"
+                                   TextColor="Black"
+                                   VerticalOptions="FillAndExpand"
+                                   HorizontalOptions="FillAndExpand"/>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Margin="0,35,0,0">
+                        <Button Text="Enviar" WidthRequest="200" BackgroundColor="#716A9C" TextColor="White" FontAttributes="Bold">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#716A9C"
+                                                    Offset="0.1" />
+                                    <GradientStop Color="#9998A3"
+                                                    Offset="0.5" />
+                                    <GradientStop Color="#716A9C"
+                                                    Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button Text="Cancelar operação" WidthRequest="200" Background="Transparent" Margin="0,10" TextColor="#716A9C" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </Grid>
+
+        <TccManagementPersonal:TabbedPageMenu AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,430,100"/>
+    </AbsoluteLayout>
+</ContentPage>

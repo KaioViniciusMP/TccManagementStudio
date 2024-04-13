@@ -17,6 +17,21 @@ public partial class PageHome : ContentPage
         Navigation.PushAsync(new PageEscolherModalidade());
     }
 
+    private void PageServicesConfiguracoes(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageServicesConfiguracoes());
+    }
+
+    private void PageEscolherAjuda(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageEscolherAjuda());
+    }
+
+    private void PageEntradaFinanceiraExtra(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageEntradaFinanceiraExtra());
+    }
+
     /*
      <Grid RowDefinitions="*,*" x:Name="grid">
         <StackLayout Grid.Row="0"  BackgroundColor="Purple">
