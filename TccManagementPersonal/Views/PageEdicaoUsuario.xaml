@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TccManagementPersonal.Views.PageEntradaFinanceiraMensal"
-             Title="PageEntradaFinanceiraMensal"
-             NavigationPage.HasNavigationBar="false"
+             x:Class="TccManagementPersonal.Views.PageEdicaoUsuario"
+             Title="PageEdicaoUsuario"
+              NavigationPage.HasNavigationBar="false"
              xmlns:TccManagementPersonal="clr-namespace:TccManagementPersonal.Componentes"
             Background="#5D5C96">
-
+    
     <AbsoluteLayout>
         <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
             <Grid RowDefinitions="150,*"  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
@@ -24,35 +24,23 @@
                         </StackLayout>
                         <StackLayout Grid.Row="1" Margin="40,0,40,0">
 
-                            <Label Margin="10,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Tipo de salarial:"/>
+                            <Label Margin="10,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Nome"/>
                             <Frame BorderColor="#716A9C" HeightRequest="50" CornerRadius="10" Padding="4" Margin="0,0,0,10">
-                                <Picker>
-                                    <Picker.ItemsSource>
-                                        <x:Array Type="{x:Type x:String}">
-                                            <x:String>Lazer</x:String>
-                                            <x:String>Compras</x:String>
-                                            <x:String>Saúde</x:String>
-
-                                            <x:String>Transporte</x:String>
-                                            <x:String>Alimentação</x:String>
-                                            <x:String>Investimentos</x:String>
-                                        </x:Array>
-                                    </Picker.ItemsSource>
-                                </Picker>
+                                <Entry Placeholder="Digite seu nome..." />
                             </Frame>
 
-                            <Label Margin="10,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Salario:"/>
+                            <Label Margin="10,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Usuario"/>
                             <Frame BorderColor="#716A9C" HeightRequest="50" CornerRadius="10" Padding="4" Margin="0,0,0,10">
-                                <Entry Placeholder="Defina seu salario atual..." />
+                                <Entry Placeholder="Defina seu nome de usuario..." />
                             </Frame>
 
-                            <Label Margin="10,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Saldo atual:"/>
+                            <Label Margin="10,0,0,10" TextColor="Black" FontAttributes="Bold" Text="Senha"/>
                             <Frame BorderColor="#716A9C" HeightRequest="50" CornerRadius="10" Padding="4" Margin="0,0,0,10">
-                                <Entry Placeholder="Digite seu saldo atual em conta..." />
+                                <Entry Placeholder="Defina sua senha..." />
                             </Frame>
 
                             <StackLayout Margin="0,60,0,0">
-                                <Button Text="Editar" Clicked="DefinicaoFeita" WidthRequest="200" BackgroundColor="#716A9C" TextColor="White" FontAttributes="Bold"/>
+                                <Button Text="Editar" Clicked="EdicaoFeita"  WidthRequest="200" BackgroundColor="#716A9C" TextColor="White" FontAttributes="Bold"/>
 
                                 <Button Text="Cancelar operação" Clicked="CancelarOperacao" WidthRequest="200" Background="Transparent" Margin="0,10" TextColor="#716A9C" FontAttributes="Bold"/>
                             </StackLayout>

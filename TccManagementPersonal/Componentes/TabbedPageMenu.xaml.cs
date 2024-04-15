@@ -11,11 +11,16 @@ public partial class TabbedPageMenu : StackLayout
 
     private void PopPageHome(object sender, TappedEventArgs e)
     {
-		Navigation.PopToRootAsync();
+		Navigation.PushAsync(new PageHome());
     }
 
     private void PageEntradaFinanceiraMensal(object sender, TappedEventArgs e)
     {
         Navigation.PushAsync(new PageEntradaFinanceiraMensal());
+    }
+
+    private void OpcoesPersonalizacaogAndConfig(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageOpcoesPersonalizacaoConfig());
     }
 }

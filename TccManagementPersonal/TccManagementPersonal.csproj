@@ -65,7 +65,9 @@
 	  <None Remove="Resources\Images\iconhistorico.svg" />
 	  <None Remove="Resources\Images\iconmais.svg" />
 	  <None Remove="Resources\Images\iconopcoes.svg" />
+	  <None Remove="Resources\Images\iconpessoa.svg" />
 	  <None Remove="Resources\Images\iconplanejar.svg" />
+	  <None Remove="Resources\Images\iconsair.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -84,6 +86,15 @@
 	  <MauiXaml Update="Componentes\TabbedPageMenu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\PageCadastro.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageEdicaoUsuario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageEntrada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PageEntradaFinanceiraExtra.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -97,6 +108,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PageHome.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageLogin.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\PageOpcoesPersonalizacaoConfig.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PagePrivacidadeSegurança.xaml">

@@ -6,4 +6,14 @@ public partial class PageServicesConfiguracoes : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void EdicaoUsuario(object sender, TappedEventArgs e)
+    {
+		Navigation.PushAsync(new PageEdicaoUsuario());
+    }
+
+    private void EntradaFinanceiraMensal(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageEntradaFinanceiraMensal());
+    }
 }

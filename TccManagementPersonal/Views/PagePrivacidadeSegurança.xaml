@@ -14,7 +14,7 @@
                     <Label Text="Voltar" FontAttributes="Bold" FontSize="20" TextColor="White" Margin="10"/>
                 </HorizontalStackLayout>
 
-                <Frame CornerRadius="40" Padding="0,0,0,100" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent">
+                <Frame CornerRadius="40" Padding="0,0,0,140" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent">
                     <Grid RowDefinitions="110,*,*" Margin="0">
                         <StackLayout Grid.Row="0" Margin="26,26,26,0">
                             <Label Text="conteudo juridico do app" HorizontalOptions="Center" FontSize="22" TextColor="Black" TextTransform="Uppercase" Margin="10,0,0,0" FontAttributes="Bold"/>

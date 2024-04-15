@@ -33,7 +33,7 @@
                         </Frame>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Margin="0,35,0,0">
-                        <Button Text="Enviar" WidthRequest="200" BackgroundColor="#716A9C" TextColor="White" FontAttributes="Bold">
+                        <Button Text="Enviar" Clicked="ProblemaEnviado" WidthRequest="200" BackgroundColor="#716A9C" TextColor="White" FontAttributes="Bold">
                             <Button.Background>
                                 <LinearGradientBrush>
                                     <GradientStop Color="#716A9C"
@@ -45,7 +45,7 @@
                                 </LinearGradientBrush>
                             </Button.Background>
                         </Button>
-                        <Button Text="Cancelar operação" WidthRequest="200" Background="Transparent" Margin="0,10" TextColor="#716A9C" FontAttributes="Bold"/>
+                        <Button Text="Cancelar operação" Clicked="OperacaoCancelada" WidthRequest="200" Background="Transparent" Margin="0,10" TextColor="#716A9C" FontAttributes="Bold"/>
                     </StackLayout>
                 </Grid>
             </Frame>

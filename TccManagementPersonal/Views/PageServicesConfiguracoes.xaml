@@ -29,14 +29,22 @@
                         <BoxView Color="Gray" Margin="0,10,0,0" HeightRequest="1" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Center"/>
 
                         <Grid ColumnDefinitions="60,*,*" HeightRequest="70">
-                            <Image Source="iconcasa.png" HorizontalOptions="Start" VerticalOptions="Center"/>
-                            <Label Text="Editar dados do perfil" HorizontalOptions="Start" Grid.Column="1" TextColor="Black" VerticalOptions="Center"/>
+                            <Image Source="iconpessoa.png" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="Editar dados do perfil" HorizontalOptions="Start" Grid.Column="1" TextColor="Black" VerticalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="EdicaoUsuario"/>
+                                </Label.GestureRecognizers>
+                            </Label>
                             <Label Text=">" HorizontalOptions="End" Grid.Column="2" TextColor="Black" VerticalOptions="Center" FontSize="40"/>
                         </Grid>
 
                         <Grid ColumnDefinitions="60,*,*" HeightRequest="70">
-                            <Image Source="iconcasa.png" HorizontalOptions="Start" VerticalOptions="Center"/>
-                            <Label Text="Editar dados do perfil" HorizontalOptions="Start" Grid.Column="1" TextColor="Black" VerticalOptions="Center"/>
+                            <Image Source="iconentradafinanceira.png" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="Editar entrada de dinheiro mensal" HorizontalOptions="Start" Grid.Column="1" TextColor="Black" VerticalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="EntradaFinanceiraMensal"/>
+                                </Label.GestureRecognizers>
+                            </Label>
                             <Label Text=">" HorizontalOptions="End" Grid.Column="2" TextColor="Black" VerticalOptions="Center" FontSize="40"/>
                         </Grid>
                     </StackLayout>

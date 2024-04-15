@@ -67,7 +67,11 @@
 
                                 <VerticalStackLayout>
                                     <Frame HeightRequest="70" WidthRequest="70" BackgroundColor="LightGray" BorderColor="Transparent">
-                                        <Image Source="iconplanejar.png" WidthRequest="40"/>
+                                        <Image Source="iconplanejar.png" WidthRequest="40">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="PlanejamentoFinanceiro"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
                                     </Frame>
                                     <Label Text="Planejar" HorizontalOptions="Center"/>
                                 </VerticalStackLayout>

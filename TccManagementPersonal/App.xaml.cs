@@ -9,7 +9,7 @@ namespace TccManagementPersonal
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new /*TabbedPageMenu()*/ PageHome());
+            MainPage = new NavigationPage (new PageEntrada());
         }
     }
 }

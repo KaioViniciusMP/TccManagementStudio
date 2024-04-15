@@ -32,6 +32,16 @@ public partial class PageHome : ContentPage
         Navigation.PushAsync(new PageEntradaFinanceiraExtra());
     }
 
+    private void PaginaTeste(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new PageEntrada());
+    }
+
+    private void PlanejamentoFinanceiro(object sender, TappedEventArgs e)
+    {
+        DisplayAlert("Aviso", "Em breve teremos novidades.\n \nPagina indisponivel no momento", "Fechar");
+    }
+
     /*
      <Grid RowDefinitions="*,*" x:Name="grid">
         <StackLayout Grid.Row="0"  BackgroundColor="Purple">

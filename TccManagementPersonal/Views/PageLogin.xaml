@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Views.PageLogin"
+             Title="PageLogin"
+            Background="#5D5C96"
+            NavigationPage.HasNavigationBar="false">
+
+    <ContentPage.BackgroundImageSource>
+        <FileImageSource />
+    </ContentPage.BackgroundImageSource>
+
+    <Frame MaximumWidthRequest="350" MaximumHeightRequest="620" Background="#3D3D3D">
+        <Grid RowDefinitions="200,*,120">
+            <StackLayout Grid.Row="0">
+                <Image Source="dotnet_bot.png"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Margin="0,10,0,0">
+                <Label Text="Usuario" Margin="10,0,0,10" FontAttributes="Bold"/>
+                <Frame BorderColor="#716A9C" HeightRequest="50" CornerRadius="15" Padding="4" Margin="0,0,0,10">
+                    <Entry Placeholder="Digite seu nome de usuario"/>
+                </Frame>
+
+                <Label Text="Senha" Margin="10,0,0,10" FontAttributes="Bold"/>
+                <Frame BorderColor="#716A9C" HeightRequest="50" CornerRadius="15" Padding="4" Margin="0,0,0,10">
+                    <Entry Placeholder="Digite sua senha"/>
+                </Frame>
+
+                <HorizontalStackLayout>
+                    <CheckBox/>
+                    <Label Text="Manter-se Conectado" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="2" VerticalOptions="End">
+                <Button Text="Login" Clicked="Home"/>
+                <Label Text="Não possuo uma conta" Margin="0,10,0,30" HorizontalOptions="Center" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Cadastro"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </Grid>
+    </Frame>
+</ContentPage>
