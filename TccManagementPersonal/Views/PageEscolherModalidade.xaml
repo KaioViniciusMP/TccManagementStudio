@@ -22,12 +22,12 @@
                             <Label Text="Utilizar R$ em qual modalidade?" FontAttributes="Bold" Margin="16,0,0,0" FontSize="16" TextColor="Black"/>
                         </StackLayout>
 
-                        <Button Text="Lazer" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Button Text="Compras" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Button Text="Saúde" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Button Text="Transporte" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Button Text="Alimentação" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
-                        <Button Text="Investimentos" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Button Text="Lazer" x:Name="btnlazer" Clicked="btnService" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Button Text="Compras" x:Name="btncompras" Clicked="btnService" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Button Text="Saúde" x:Name="btnsaude" Clicked="btnService" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Button Text="Transporte" x:Name="btntransporte" Clicked="btnService" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Button Text="Alimentação" x:Name="btnalimentacao" Clicked="btnService" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
+                        <Button Text="Investimentos" x:Name="btninvestimentos" Clicked="btnService" HeightRequest="50" Background="#D9D9D9" WidthRequest="350" TextColor="Black" FontAttributes="Bold" FontSize="15"/>
                     </StackLayout>
                     
                 </Frame>

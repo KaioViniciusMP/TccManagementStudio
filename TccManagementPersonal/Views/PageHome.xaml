@@ -106,12 +106,32 @@
 
                                     <VerticalStackLayout>
                                         <Grid ColumnDefinitions="80,30,*,*">
-                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
-                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0">
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesInvestimentos"/>
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                                <BoxView.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesInvestimentos"/>
+                                                </BoxView.GestureRecognizers>
+                                            </BoxView>
                                             <VerticalStackLayout Grid.Column="2">
-                                                <Label Text="Investimentos" TextColor="Black"/>
-                                                <Label Text="R$12.123,00" TextColor="Black"/>
-                                                <Label Text="74,85%" TextColor="Black"/>
+                                                <Label Text="Investimentos" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesInvestimentos"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="R$12.123,00" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesInvestimentos"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="74,85%" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesInvestimentos"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
                                             </VerticalStackLayout>
                                             <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
                                         </Grid>
@@ -119,66 +139,186 @@
 
                                     <VerticalStackLayout>
                                         <Grid ColumnDefinitions="80,30,*,*">
-                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
-                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0">
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesAlimentacao"/>
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                                <BoxView.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesAlimentacao"/>
+                                                </BoxView.GestureRecognizers>
+                                            </BoxView>
                                             <VerticalStackLayout Grid.Column="2">
-                                                <Label Text="Alimentação" TextColor="Black"/>
-                                                <Label Text="R$12.123,00" TextColor="Black"/>
-                                                <Label Text="74,85%" TextColor="Black"/>
+                                                <Label Text="Alimentação" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesAlimentacao"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="R$12.123,00" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesAlimentacao"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="74,85%" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesAlimentacao"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
                                             </VerticalStackLayout>
-                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesAlimentacao"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
                                         </Grid>
                                     </VerticalStackLayout>
 
                                     <VerticalStackLayout>
                                         <Grid ColumnDefinitions="80,30,*,*">
-                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
-                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0">
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesTransporte"/>
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                                <BoxView.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesTransporte"/>
+                                                </BoxView.GestureRecognizers>
+                                            </BoxView>
                                             <VerticalStackLayout Grid.Column="2">
-                                                <Label Text="Transporte" TextColor="Black"/>
-                                                <Label Text="R$12.123,00" TextColor="Black"/>
-                                                <Label Text="74,85%" TextColor="Black"/>
+                                                <Label Text="Transporte" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesTransporte"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="R$12.123,00" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesTransporte"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="74,85%" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesTransporte"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
                                             </VerticalStackLayout>
-                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesTransporte"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
                                         </Grid>
                                     </VerticalStackLayout>
 
                                     <VerticalStackLayout>
                                         <Grid ColumnDefinitions="80,30,*,*">
-                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
-                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0">
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesCompras"/>
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                                <BoxView.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesCompras"/>
+                                                </BoxView.GestureRecognizers>
+                                            </BoxView>
                                             <VerticalStackLayout Grid.Column="2">
-                                                <Label Text="Compras" TextColor="Black"/>
-                                                <Label Text="R$12.123,00" TextColor="Black"/>
-                                                <Label Text="74,85%" TextColor="Black"/>
+                                                <Label Text="Compras" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesCompras"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="R$12.123,00" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesCompras"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="74,85%" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesCompras"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
                                             </VerticalStackLayout>
-                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesCompras"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
                                         </Grid>
                                     </VerticalStackLayout>
 
                                     <VerticalStackLayout>
                                         <Grid ColumnDefinitions="80,30,*,*">
-                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
-                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0">
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesSaude"/>
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                                <BoxView.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesSaude"/>
+                                                </BoxView.GestureRecognizers>
+                                            </BoxView>
                                             <VerticalStackLayout Grid.Column="2">
-                                                <Label Text="Saúde" TextColor="Black"/>
-                                                <Label Text="R$12.123,00" TextColor="Black"/>
-                                                <Label Text="74,85%" TextColor="Black"/>
+                                                <Label Text="Saúde" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesSaude"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="R$12.123,00" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesSaude"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="74,85%" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesSaude"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
                                             </VerticalStackLayout>
-                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesSaude"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
                                         </Grid>
                                     </VerticalStackLayout>
 
                                     <VerticalStackLayout Margin="0,0,0,100">
                                         <Grid ColumnDefinitions="80,30,*,*">
-                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0"/>
-                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand"/>
+                                            <Frame HeightRequest="70" BorderColor="LightGray" WidthRequest="70" Grid.Column="0">
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesLazer"/>
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+                                            <BoxView Color="Gray" WidthRequest="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                                <BoxView.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesLazer"/>
+                                                </BoxView.GestureRecognizers>
+                                            </BoxView>
                                             <VerticalStackLayout Grid.Column="2">
-                                                <Label Text="Lazer" TextColor="Black"/>
-                                                <Label Text="R$12.123,00" TextColor="Black"/>
-                                                <Label Text="74,85%" TextColor="Black"/>
+                                                <Label Text="Lazer" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesLazer"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="R$12.123,00" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesLazer"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                                <Label Text="74,85%" TextColor="Black">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer Tapped="HistoricoTransacoesLazer"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
                                             </VerticalStackLayout>
-                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black"/>
+                                            <Label Text=">" FontSize="40" HorizontalOptions="End" VerticalOptions="Center" Grid.Column="3" TextColor="Black">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="HistoricoTransacoesLazer"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
                                         </Grid>
                                     </VerticalStackLayout>
                                 </VerticalStackLayout>

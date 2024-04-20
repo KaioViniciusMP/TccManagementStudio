@@ -42,6 +42,42 @@ public partial class PageHome : ContentPage
         DisplayAlert("Aviso", "Em breve teremos novidades.\n \nPagina indisponivel no momento", "Fechar");
     }
 
+    private void HistoricoTransacoesInvestimentos(object sender, TappedEventArgs e)
+    {
+        string historicoTransacoesInvestimentos = "Investimentos";
+        Navigation.PushAsync(new HistoricoTransacoes(historicoTransacoesInvestimentos));
+    }
+
+    private void HistoricoTransacoesAlimentacao(object sender, TappedEventArgs e)
+    {
+        string historicoTransacoesAlimentacao = "Alimentacao";
+        Navigation.PushAsync(new HistoricoTransacoes(historicoTransacoesAlimentacao));
+    }
+
+    private void HistoricoTransacoesTransporte(object sender, TappedEventArgs e)
+    {
+        string historicoTransacoesTransporte = "Transporte";
+        Navigation.PushAsync(new HistoricoTransacoes(historicoTransacoesTransporte));
+    }
+
+    private void HistoricoTransacoesCompras(object sender, TappedEventArgs e)
+    {
+        string historicoTransacoesCompras = "Compras";
+        Navigation.PushAsync(new HistoricoTransacoes(historicoTransacoesCompras));
+    }
+
+    private void HistoricoTransacoesSaude(object sender, TappedEventArgs e)
+    {
+        string historicoTransacoesSaude = "Saude";
+        Navigation.PushAsync(new HistoricoTransacoes(historicoTransacoesSaude));
+    }
+
+    private void HistoricoTransacoesLazer(object sender, TappedEventArgs e)
+    {
+        string historicoTransacoesLazer = "Lazer";
+        Navigation.PushAsync(new HistoricoTransacoes(historicoTransacoesLazer));
+    }
+
     /*
      <Grid RowDefinitions="*,*" x:Name="grid">
         <StackLayout Grid.Row="0"  BackgroundColor="Purple">

@@ -23,4 +23,9 @@ public partial class TabbedPageMenu : StackLayout
     {
         Navigation.PushAsync(new PageOpcoesPersonalizacaoConfig());
     }
+
+    private void HistoricoCompletoTransacoes(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new ());
+    }
 }

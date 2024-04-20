@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TccManagementPersonal.Views.HistoricoTransacoes"
+             Title="HistoricoTransacoes"
+              BackgroundColor="#5D5C96"
+                NavigationPage.HasNavigationBar="false"
+                xmlns:TccManagementPersonal="clr-namespace:TccManagementPersonal.Componentes">
+
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Grid RowDefinitions="140,*">
+                <StackLayout Grid.Row="0" BackgroundColor="#5D5C96" Orientation="Horizontal" VerticalOptions="Start">
+                    <Frame HeightRequest="60" WidthRequest="60" BackgroundColor="#7C76A8" CornerRadius="30" Margin="15" HorizontalOptions="Start" BorderColor="Transparent"/>
+                    <Label Text="Olá, Kaio!" VerticalOptions="Center" FontAttributes="Bold"/>
+                </StackLayout>
+
+                <Frame Padding="26,26,26,150" CornerRadius="40" Grid.Row="1" BackgroundColor="White" BorderColor="Transparent">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="Transações" TextTransform="Uppercase" FontAttributes="Bold" FontSize="20" TextColor="Black" Margin="0,0,120,0"/>
+                            <Label Text="icon" TextColor="#545454" FontAttributes="Bold" Margin="100,0,0,0"/>
+                        </StackLayout>
+
+                        <Label x:Name="tituloRequisicao" Margin="12,0,0,15" TextTransform="Uppercase" TextColor="Black"/>
+                        
+                        <ListView x:Name="ItemsListView"
+                              SeparatorVisibility="Default"
+                              SeparatorColor="gray"
+                              BackgroundColor="Transparent"
+                              VerticalOptions="FillAndExpand"
+                              HasUnevenRows="True"
+                              SelectionMode="Single">
+
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Padding="10" x:Name="ImageHistorico2">
+                                            <Grid ColumnDefinitions="*,*,*">
+                                                <Image Grid.Column="0" MaximumHeightRequest="75"/>
+
+                                                <VerticalStackLayout Padding="2" Grid.Column="1">
+                                                    <Label Text="{Binding Titulo}" TextTransform="Uppercase" FontSize="15" FontAttributes="Bold" Margin="0,0,5,0" TextColor="Black" Opacity="0.9"/>
+                                                    <Label Text="{Binding Subtitulo}" TextColor="#545454"/>
+                                                </VerticalStackLayout>
+
+                                                <StackLayout Padding="2" Grid.Column="2" Margin="0,0,10,10" HorizontalOptions="End" VerticalOptions="Center">
+                                                    <Label Text="{Binding Valor}" FontAttributes="Bold" FontSize="18" TextColor="Black"/>
+                                                </StackLayout>
+                                            </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+        </ScrollView>
+
+        <TccManagementPersonal:TabbedPageMenu AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,1,430,100"/>
+
+    </AbsoluteLayout>
+</ContentPage>
